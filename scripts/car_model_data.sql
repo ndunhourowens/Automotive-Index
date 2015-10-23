@@ -22339,3 +22339,8 @@ INSERT INTO car_models (make_code, make_title, model_code, model_title, year) VA
 ('YUGO','Yugo','YUOTH','Other Yugo Models',2014),
 ('YUGO','Yugo','YUOTH','Other Yugo Models',2015),
 ('YUGO','Yugo','YUOTH','Other Yugo Models',2016);
+
+CREATE INDEX make_title_idx ON car_models (make_title);
+CREATE INDEX make_code_idx on car_models (make_code);
+CREATE INDEX model_code_idx on car_models (model_code);
+CREATE INDEX year_idx ON car_models (year);
